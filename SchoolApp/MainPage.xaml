@@ -5,6 +5,9 @@
              Title="Home">
 
     <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+        <Button Text="Open students list"
+        Clicked="OnOpenStudentsClicked"
+        HorizontalOptions="Center" />
         <Label Text="School App"
                FontSize="32"
                HorizontalOptions="Center" />
