@@ -1,12 +1,15 @@
-﻿namespace SchoolApp;
+﻿using SchoolApp.ViewModels;
+
+namespace SchoolApp;
 
 public partial class MainPage : ContentPage
 {
-    private int _count = 0;
+    private int _count;
 
     public MainPage()
     {
         InitializeComponent();
+        BindingContext = new Person();
     }
 
     private void OnTapClicked(object sender, EventArgs e)
